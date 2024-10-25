@@ -9,7 +9,7 @@ public class GestioneThreads extends Thread{
     }
     public void run() {
         try {
-            while(contatore <= 50) {
+            while(contatore < 50) {
                 sem.acquire();
                 if (nome.equals("T1")) {
                     if (contatore % 2 == 0) {
