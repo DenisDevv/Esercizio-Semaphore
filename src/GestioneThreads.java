@@ -11,7 +11,7 @@ public class GestioneThreads extends Thread{
         try {
             while(contatore <= 50) {
                 sem.acquire();
-                if (nome == "T1") {
+                if (nome.equals("T1")) {
                     if (contatore % 2 == 0) {
                         System.out.println("Thread " + nome + ": " + contatore);
                         contatore++;
